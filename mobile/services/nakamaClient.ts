@@ -15,7 +15,7 @@ const serverKey = process.env.EXPO_PUBLIC_NAKAMA_SERVER_KEY ?? "defaultkey";
 const client = new Client(serverKey, host, port, useSSL);
 
 // IMPORTANT: This must match the registered match module name in the backend (main.ts)
-const MATCH_MODULE_NAME = "tic-tac-toe_js";
+const MATCH_MODULE_NAME = "tic-tac-toe";
 
 let session: Session | null = null;
 let socket: Socket | null = null;
@@ -85,8 +85,13 @@ export async function connectSocket(): Promise<Socket> {
   }
 
   socket = client.createSocket(useSSL, false);
-  await socket.connect(session!, true);
-  console.log("✅ Socket connected to Nakama.");
+  try {
+    await socket.connect(session!, true);
+    console.log("✅ Socket connected to Nakama.");
+  } catch (err) {
+    socket = null;
+    throw "Socket connection failed: " + err;
+  }
   return socket;
 }
 

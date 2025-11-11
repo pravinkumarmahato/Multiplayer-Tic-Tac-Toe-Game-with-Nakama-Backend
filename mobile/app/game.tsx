@@ -345,7 +345,7 @@ export default function GameScreen() {
           <View style={styles.playersRow}>
             <View style={[styles.playerCard, isMyTurn() && !gameState.winner && styles.activePlayerCard]}>
               <Text style={styles.playerName}>
-                {myPlayer ? `You (${myPlayer.username})` : "You"}
+                {myPlayer ? `You (${myPlayer.username.substring(0, 5)}...)` : "You"}
               </Text>
               <Text style={[styles.playerSymbol, { color: "#007AFF" }]}>
                 {myPlayer ? myPlayer.symbol : ""}
@@ -359,7 +359,7 @@ export default function GameScreen() {
             <Text style={styles.vs}>VS</Text>
             <View style={[styles.playerCard, !isMyTurn() && !gameState.winner && gameState.started && styles.activePlayerCard]}>
               <Text style={styles.playerName}>
-                {opponent ? opponent.username : "Waiting..."}
+                {opponent ? `(${opponent.username.substring(0, 5)}...)` : "Waiting..."}
               </Text>
               <Text style={[styles.playerSymbol, { color: "#FF3B30" }]}>
                 {opponent ? opponent.symbol : ""}
@@ -372,12 +372,12 @@ export default function GameScreen() {
             </View>
           </View>
 
-          {/* Error message */}
-          {error ? (
+          {/* Error message - only for debugging */}
+          {/* {error ? (
             <View style={styles.errorContainer}>
               <Text style={styles.errorText}>{error}</Text>
             </View>
-          ) : null}
+          ) : null} */}
 
           {/* Timer display - only in timed mode */}
           {isTimedMode && gameState.started && !gameState.winner && (
@@ -398,11 +398,11 @@ export default function GameScreen() {
           <Text style={styles.statusText}>{getStatusText()}</Text>
 
           {/* Match ID Debug */}
-          {connected && (
+          {/* {connected && (
             <Text style={styles.matchId}>
               Match: {getCurrentMatchId()?.substring(0, 8) || "None"}...
             </Text>
-          )}
+          )} */}
 
           {/* Action buttons - removed as we navigate to result screen */}
         </>
@@ -545,15 +545,15 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     fontStyle: "italic",
   },
-  errorContainer: {
-    padding: 10,
-    backgroundColor: "#FFEBEE",
-    borderRadius: 8,
-    marginBottom: 10,
-  },
-  errorText: {
-    color: "#C62828",
-    fontSize: 14,
-    textAlign: "center",
-  },
+  // errorContainer: {
+  //   padding: 10,
+  //   backgroundColor: "#FFEBEE",
+  //   borderRadius: 8,
+  //   marginBottom: 10,
+  // },
+  // errorText: {
+  //   color: "#C62828",
+  //   fontSize: 14,
+  //   textAlign: "center",
+  // },
 });

@@ -61,7 +61,7 @@ export default function SplashScreen() {
       <Text style={styles.title}>Multiplayer Tic Tac Toe</Text>
       <ActivityIndicator size="large" color="#007bff" style={{ marginVertical: 20 }} />
       {status && <Text style={styles.status}>{status}</Text>}
-      {error && <Text style={styles.error}>{error}</Text>}
+      {/* {error && <Text style={styles.error}>{error}</Text>} */}
       {error && <Button title="Retry" onPress={handleRetry} />}
     </View>
   );
