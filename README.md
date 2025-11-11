@@ -25,35 +25,35 @@ const serverKey = "defaultkey";
 
 ## Screenshots
 
-![Splash Screen](mobile/assets/images/SplashScreen.jpg)
+<img src="mobile/assets/images/SplashScreen.jpg" alt="Splash Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Home Screen](mobile/assets/images/Home.jpg)
+<img src="mobile/assets/images/Home.jpg" alt="Home Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Game Mode Screen](mobile/assets/images/GameMode.jpg)
+<img src="mobile/assets/images/GameMode.jpg" alt="Game Mode Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Finding Screen](mobile/assets/images/Searching.jpg)
+<img src="mobile/assets/images/Searching.jpg" alt="Finding Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Waiting Screen](mobile/assets/images/Waiting.jpg)
+<img src="mobile/assets/images/Waiting.jpg" alt="Waiting Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Your Turn Screen](mobile/assets/images/YourTurn.jpg)
+<img src="mobile/assets/images/YourTurn.jpg" alt="Your Turn Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Opponent's Turn Screen](mobile/assets/images/OpponentTurn.jpg)
+<img src="mobile/assets/images/OpponentTurn.jpg" alt="Opponent's Turn Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Opponent Left Screen](mobile/assets/images/OpponentLeft.jpg)
+<img src="mobile/assets/images/OpponentLeft.jpg" alt="Opponent Left Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Timed Game Screen](mobile/assets/images/Timed.jpg)
+<img src="mobile/assets/images/Timed.jpg" alt="Timed Game Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Win Screen](mobile/assets/images/YouWin.jpg)
+<img src="mobile/assets/images/YouWin.jpg" alt="Win Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Win Screen](mobile/assets/images/Win.jpg)
+<img src="mobile/assets/images/Win.jpg" alt="Win Screen 2" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Lost Screen](mobile/assets/images/YouLost.jpg)
+<img src="mobile/assets/images/YouLost.jpg" alt="Lost Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Lost Screen](mobile/assets/images/Lost.jpg)
+<img src="mobile/assets/images/Lost.jpg" alt="Lost Screen 2" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Game History Screen](mobile/assets/images/GameHistory.jpg)
+<img src="mobile/assets/images/GameHistory.jpg" alt="Game History Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
-![Leaderboard Screen](mobile/assets/images/Leaderboard.jpg)
+<img src="mobile/assets/images/Leaderboard.jpg" alt="Leaderboard Screen" style="width:320px; max-width:100%; height:auto; max-height:640px; border:1px solid #ddd; border-radius:8px; margin:8px 0;" />
 
 ## Table of Contents
 - [Architecture](#architecture)
