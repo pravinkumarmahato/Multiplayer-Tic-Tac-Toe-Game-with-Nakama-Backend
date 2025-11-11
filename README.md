@@ -4,7 +4,7 @@ Production-ready multiplayer Tic-Tac-Toe with a server-authoritative Nakama back
 
 ## Published demo & hosted backend
 
-![Expo App QR Code](mobile\assets\images\QRcode.png)
+![Expo App QR Code](mobile/assets/images/QRcode.png)
 
 - Mobile app published on Expo: https://expo.dev — the app can be opened in the Expo Go app by scanning the QR code (shown above) or by visiting the project's Expo URL. Replace the placeholder Expo URL with your actual published project link if needed.
 - Nakama runtime backend deployed on AWS EC2. To point the mobile client to this hosted backend:
@@ -55,9 +55,9 @@ Example embeds (replace filenames as needed):
 
 ![Lost Screen](mobile/assets/images/Lost.jpg)
 
-![Game History Screen](mobile\assets\images\GameHistory.jpg)
+![Game History Screen](mobile/assets/images/GameHistory.jpg)
 
-![Leaderboard Screen](mobile\assets\images\Leaderboard.jpg)
+![Leaderboard Screen](mobile/assets/images/Leaderboard.jpg)
 
 Tips:
 - Recommended portrait size: 1080×1920 (or similar high-res PNG/JPEG).
