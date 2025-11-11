@@ -2,6 +2,68 @@
 
 Production-ready multiplayer Tic-Tac-Toe with a server-authoritative Nakama backend and an Expo/React Native mobile client. The project fulfills the Lila Games assessment requirements, including secure move validation, automated matchmaking, leaderboard tracking, timed game mode, deployment readiness, and multiplayer testing guidance.
 
+## Published demo & hosted backend
+
+![Expo App QR Code](mobile\assets\images\QRcode.png)
+
+- Mobile app published on Expo: https://expo.dev — the app can be opened in the Expo Go app by scanning the QR code (shown above) or by visiting the project's Expo URL. Replace the placeholder Expo URL with your actual published project link if needed.
+- Nakama runtime backend deployed on AWS EC2. To point the mobile client to this hosted backend:
+
+  - Update `mobile/services/nakamaClient.ts` with your EC2 public DNS or IP and the correct port (typically 7350 for the Nakama HTTP/WS API). Example:
+
+```ts
+const useSSL = false; // set to true if you configure TLS (WSS)
+const host = "ec2-xx-xx-xx-xx.compute-1.amazonaws.com"; // replace with your EC2 public DNS or IP
+const port = "7350";
+const serverKey = "defaultkey";
+```
+
+  - Ensure your EC2 security group allows inbound traffic on the Nakama ports you use (7350 for API/WS, 7351 for Console) and any TLS/HTTP ports if you reverse-proxy.
+
+  - If you expose Nakama over TLS (recommended for production), use a reverse proxy (nginx / ALB) or configure TLS on the instance and set `useSSL = true` in the client.
+
+
+## Screenshots
+
+Below are a few example screenshots from the mobile app. To add or replace screenshots, put image files inside `mobile/assets/images/` and update the filenames used below. You can also host images elsewhere and reference their URLs.
+
+Example embeds (replace filenames as needed):
+
+![Splash Screen](mobile/assets/images/SplashScreen.jpg)
+
+![Home Screen](mobile/assets/images/Home.jpg)
+
+![Game Mode Screen](mobile/assets/images/GameMode.jpg)
+
+![Finding Screen](mobile/assets/images/Searching.jpg)
+
+![Waiting Screen](mobile/assets/images/Waiting.jpg)
+
+![Your Turn Screen](mobile/assets/images/YourTurn.jpg)
+
+![Opponent's Turn Screen](mobile/assets/images/OpponentTurn.jpg)
+
+![Opponent Left Screen](mobile/assets/images/OpponentLeft.jpg)
+
+![Timed Game Screen](mobile/assets/images/Timed.jpg)
+
+![Win Screen](mobile/assets/images/YouWin.jpg)
+
+![Win Screen](mobile/assets/images/Win.jpg)
+
+![Lost Screen](mobile/assets/images/YouLost.jpg)
+
+![Lost Screen](mobile/assets/images/Lost.jpg)
+
+![Game History Screen](mobile\assets\images\GameHistory.jpg)
+
+![Leaderboard Screen](mobile\assets\images\Leaderboard.jpg)
+
+Tips:
+- Recommended portrait size: 1080×1920 (or similar high-res PNG/JPEG).
+- Keep filenames short and lowercase (e.g. `splash.png`, `game.png`).
+- Commit large images to LFS if your repo will store many high-resolution screenshots.
+
 ## Table of Contents
 - [Architecture](#architecture)
 - [Key Features by Requirement](#key-features-by-requirement)
