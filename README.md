@@ -76,7 +76,7 @@ npx expo start
 Update the host in `mobile/services/nakamaClient.ts`:
 ```ts
 const useSSL = false;          // set true when serving over HTTPS/WSS
-const host = "192.168.1.157"; // replace with your backend hostname or IP
+const host = "127.0.0.1"; // replace with your backend hostname or IP
 const port = "7350";
 const serverKey = "defaultkey";
 ```
