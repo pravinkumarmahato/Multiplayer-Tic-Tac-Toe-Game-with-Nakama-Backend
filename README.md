@@ -25,10 +25,6 @@ const serverKey = "defaultkey";
 
 ## Screenshots
 
-Below are a few example screenshots from the mobile app. To add or replace screenshots, put image files inside `mobile/assets/images/` and update the filenames used below. You can also host images elsewhere and reference their URLs.
-
-Example embeds (replace filenames as needed):
-
 ![Splash Screen](mobile/assets/images/SplashScreen.jpg)
 
 ![Home Screen](mobile/assets/images/Home.jpg)
@@ -58,11 +54,6 @@ Example embeds (replace filenames as needed):
 ![Game History Screen](mobile/assets/images/GameHistory.jpg)
 
 ![Leaderboard Screen](mobile/assets/images/Leaderboard.jpg)
-
-Tips:
-- Recommended portrait size: 1080×1920 (or similar high-res PNG/JPEG).
-- Keep filenames short and lowercase (e.g. `splash.png`, `game.png`).
-- Commit large images to LFS if your repo will store many high-resolution screenshots.
 
 ## Table of Contents
 - [Architecture](#architecture)
