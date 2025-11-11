@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Nakama Backend for Tic Tac Toe Game",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "nakama-runtime": "github:heroiclabs/nakama-common"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
