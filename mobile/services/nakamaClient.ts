@@ -9,7 +9,6 @@ if (process.env.EXPO_PUBLIC_NAKAMA_SSL && process.env.EXPO_PUBLIC_NAKAMA_SSL ===
   useSSL = false;
 }
 
-
 const host = process.env.EXPO_PUBLIC_NAKAMA_HOST ?? "127.0.0.1";
 const port = process.env.EXPO_PUBLIC_NAKAMA_PORT ?? "7350";
 const serverKey = process.env.EXPO_PUBLIC_NAKAMA_SERVER_KEY ?? "defaultkey";
